@@ -6,7 +6,11 @@
 //
 
 import Foundation
+import UIKit
 
 class MainVM: ObservableObject {
     @Published var searchText: String = ""
+    @Published var isSearchEditing: Bool = false
+    @Published var edges = UIApplication.shared.windows.first?.safeAreaInsets
 }
+    

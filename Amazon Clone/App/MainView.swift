@@ -16,7 +16,7 @@ struct MainView: View {
         NavigationView {
             VStack(alignment: .center, spacing: 0) {
                 MainHeaderView()
-                    .frame(height:125)
+                  //  .frame(height:125)
                     .ignoresSafeArea(edges: .top)
                 Spacer()
                 //: ZStack
@@ -39,24 +39,26 @@ struct MainView_Previews: PreviewProvider {
 struct MainHeaderView: View {
     @EnvironmentObject var mainVM: MainVM
     var body: some View {
-        ZStack {
-                LinearGradient(colors: [Color("AccentBlue"), Color("AccentGreen")], startPoint: .leading, endPoint: .trailing)
             VStack{
-                Spacer()
+      
                 //Search
                 HStack(alignment: .center , spacing: 7) {
                     //Magnifiter Icon
                     Image(systemName: "magnifyingglass").imageScale(.large)
                     //Search Area
                     TextField.init("Amazon'da Ara",
-                                   text: $mainVM.searchText) { _ in
+                                   text: $mainVM.searchText) {
+                     
+                        mainVM.isSearchEditing = $0
                         
                     } onCommit: {
                         
                     }
                     
                     //Camera Icon
-                    Image(systemName: "camera").imageScale(.large).foregroundColor(Color("CameraIcon"))
+                    if !mainVM.isSearchEditing {
+                        Image(systemName: "camera").imageScale(.large).foregroundColor(Color("CameraIcon"))
+                    }
                 }//: HStack
                 .padding()
                 .background(
@@ -74,7 +76,11 @@ struct MainHeaderView: View {
                 .padding(.vertical)
                 .padding(.horizontal, 12)
             }//: VStack
-            
-        }//: Ztack
+            .padding(.top, mainVM.edges?.top )
+            .padding(.top, (mainVM.edges?.top ?? CGFloat(0) > 0) ? 0: 12  )
+
+            .background( LinearGradient(colors: [Color("AccentBlue"), Color("AccentGreen")], startPoint: .leading, endPoint: .trailing)
+            )
+      
     }
 }
