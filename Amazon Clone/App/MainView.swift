@@ -22,7 +22,10 @@ struct MainView: View {
                 //: ZStack
                 Text("Hello World")
                 
-            } //: VStack
+            }//: VStack
+            .onTapGesture {
+                UIApplication.shared.endEditing()
+            }
             .navigationBarHidden(true)
         } //: Nav
         
@@ -38,19 +41,28 @@ struct MainView_Previews: PreviewProvider {
 
 struct MainHeaderView: View {
     @EnvironmentObject var mainVM: MainVM
+    @State private var isAnimated: Bool = false
     var body: some View {
-            VStack{
-      
+        HStack(spacing: 0){
+             
+            
+            if mainVM.isSearchEditing{
+                Image(systemName:"arrow.backward")
+                    .font(.system(size: 22, weight: .medium))
+                    .padding(.leading)
+                    .offset(x: isAnimated ? 10 : 0 )
+                    .opacity(isAnimated ? 1 : 0)
+            }
+   
                 //Search
                 HStack(alignment: .center , spacing: 7) {
                     //Magnifiter Icon
                     Image(systemName: "magnifyingglass").imageScale(.large)
                     //Search Area
                     TextField.init("Amazon'da Ara",
-                                   text: $mainVM.searchText) {
-                     
-                        mainVM.isSearchEditing = $0
-                        
+                            text: $mainVM.searchText) {
+                      
+                            mainVM.isSearchEditing = $0
                     } onCommit: {
                         
                     }
@@ -82,5 +94,5 @@ struct MainHeaderView: View {
             .background( LinearGradient(colors: [Color("AccentBlue"), Color("AccentGreen")], startPoint: .leading, endPoint: .trailing)
             )
       
-    }
+    }//: BODY
 }
