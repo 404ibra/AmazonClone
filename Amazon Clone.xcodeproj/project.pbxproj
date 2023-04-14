@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C67651429E95CC900573FAA /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67651329E95CC900573FAA /* MainHeaderView.swift */; };
+		6C67651629E95D0500573FAA /* SearchSuggestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67651529E95D0500573FAA /* SearchSuggestView.swift */; };
 		6CF2615529E83A16003D1CBC /* Amazon_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF2615429E83A16003D1CBC /* Amazon_CloneApp.swift */; };
 		6CF2615729E83A16003D1CBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF2615629E83A16003D1CBC /* ContentView.swift */; };
 		6CF2615929E83A17003D1CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF2615829E83A17003D1CBC /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C67651329E95CC900573FAA /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		6C67651529E95D0500573FAA /* SearchSuggestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSuggestView.swift; sourceTree = "<group>"; };
 		6CF2615129E83A16003D1CBC /* Amazon Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amazon Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF2615429E83A16003D1CBC /* Amazon_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amazon_CloneApp.swift; sourceTree = "<group>"; };
 		6CF2615629E83A16003D1CBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				6CF2616A29E83BA0003D1CBC /* App */,
-				6CF2616929E83B9A003D1CBC /* Views */,
+				6CF2616929E83B9A003D1CBC /* SubViews */,
 				6CF2616829E83B95003D1CBC /* ViewModel */,
 				6CF2615629E83A16003D1CBC /* ContentView.swift */,
 				6CF2615829E83A17003D1CBC /* Assets.xcassets */,
@@ -89,11 +93,13 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		6CF2616929E83B9A003D1CBC /* Views */ = {
+		6CF2616929E83B9A003D1CBC /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				6C67651329E95CC900573FAA /* MainHeaderView.swift */,
+				6C67651529E95D0500573FAA /* SearchSuggestView.swift */,
 			);
-			path = Views;
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		6CF2616A29E83BA0003D1CBC /* App */ = {
@@ -177,8 +183,10 @@
 			files = (
 				6CF2615E29E83A17003D1CBC /* Persistence.swift in Sources */,
 				6CF2617029E84900003D1CBC /* MainVM.swift in Sources */,
+				6C67651429E95CC900573FAA /* MainHeaderView.swift in Sources */,
 				6CF2615729E83A16003D1CBC /* ContentView.swift in Sources */,
 				6CF2615529E83A16003D1CBC /* Amazon_CloneApp.swift in Sources */,
+				6C67651629E95D0500573FAA /* SearchSuggestView.swift in Sources */,
 				6CF2616E29E83BE4003D1CBC /* MainView.swift in Sources */,
 				6CF2616129E83A17003D1CBC /* Amazon_Clone.xcdatamodeld in Sources */,
 			);
