@@ -50,8 +50,14 @@ struct MainHeaderView: View {
                 Image(systemName:"arrow.backward")
                     .font(.system(size: 22, weight: .medium))
                     .padding(.leading)
-                    .offset(x: isAnimated ? 10 : 0 )
+                    .offset(x: isAnimated ? 0 : -8 )
                     .opacity(isAnimated ? 1 : 0)
+                    .animation(.easeIn)
+                    .onAppear{
+                        withAnimation{
+                            self.isAnimated = true
+                        }
+                    }
             }
    
                 //Search
@@ -93,6 +99,7 @@ struct MainHeaderView: View {
 
             .background( LinearGradient(colors: [Color("AccentBlue"), Color("AccentGreen")], startPoint: .leading, endPoint: .trailing)
             )
+      
       
     }//: BODY
 }
