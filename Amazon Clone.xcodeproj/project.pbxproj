@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6C17AE9829E96C74003EF149 /* LocationArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C17AE9729E96C74003EF149 /* LocationArea.swift */; };
 		6C17AE9A29E97AC9003EF149 /* RoundedRectTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C17AE9929E97AC9003EF149 /* RoundedRectTabView.swift */; };
+		6C4FD92029E9A50500C48C7C /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4FD91F29E9A50500C48C7C /* TabView.swift */; };
 		6C67651429E95CC900573FAA /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67651329E95CC900573FAA /* MainHeaderView.swift */; };
 		6C67651629E95D0500573FAA /* SearchSuggestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67651529E95D0500573FAA /* SearchSuggestView.swift */; };
 		6CF2615529E83A16003D1CBC /* Amazon_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF2615429E83A16003D1CBC /* Amazon_CloneApp.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		6C17AE9729E96C74003EF149 /* LocationArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationArea.swift; sourceTree = "<group>"; };
 		6C17AE9929E97AC9003EF149 /* RoundedRectTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectTabView.swift; sourceTree = "<group>"; };
+		6C4FD91F29E9A50500C48C7C /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		6C67651329E95CC900573FAA /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
 		6C67651529E95D0500573FAA /* SearchSuggestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSuggestView.swift; sourceTree = "<group>"; };
 		6CF2615129E83A16003D1CBC /* Amazon Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amazon Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 				6C67651329E95CC900573FAA /* MainHeaderView.swift */,
 				6C67651529E95D0500573FAA /* SearchSuggestView.swift */,
 				6C17AE9729E96C74003EF149 /* LocationArea.swift */,
+				6C4FD91F29E9A50500C48C7C /* TabView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C4FD92029E9A50500C48C7C /* TabView.swift in Sources */,
 				6C17AE9A29E97AC9003EF149 /* RoundedRectTabView.swift in Sources */,
 				6CF2615E29E83A17003D1CBC /* Persistence.swift in Sources */,
 				6CF2617029E84900003D1CBC /* MainVM.swift in Sources */,
