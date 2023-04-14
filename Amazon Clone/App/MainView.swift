@@ -28,8 +28,10 @@ struct HomeView: View {
                 
                     SlidingImagesView()
                     DiscoverImagesView()
-                        
-        
+                    FeaturedBanner()
+
+
+                    
                     
                 }// : Big Else
                 
@@ -47,7 +49,6 @@ struct HomeView: View {
         } //: Nav
     }
 }
-
 
     
     struct MainView: View {

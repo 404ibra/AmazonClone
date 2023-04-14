@@ -14,6 +14,7 @@
 		6C4FD92429E9B44000C48C7C /* DiscoverImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4FD92329E9B44000C48C7C /* DiscoverImagesView.swift */; };
 		6C67651429E95CC900573FAA /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67651329E95CC900573FAA /* MainHeaderView.swift */; };
 		6C67651629E95D0500573FAA /* SearchSuggestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67651529E95D0500573FAA /* SearchSuggestView.swift */; };
+		6C6C403329E9D4D000D137ED /* FeaturedBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6C403229E9D4D000D137ED /* FeaturedBanner.swift */; };
 		6CF2615529E83A16003D1CBC /* Amazon_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF2615429E83A16003D1CBC /* Amazon_CloneApp.swift */; };
 		6CF2615729E83A16003D1CBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF2615629E83A16003D1CBC /* ContentView.swift */; };
 		6CF2615929E83A17003D1CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF2615829E83A17003D1CBC /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		6C4FD92329E9B44000C48C7C /* DiscoverImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverImagesView.swift; sourceTree = "<group>"; };
 		6C67651329E95CC900573FAA /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
 		6C67651529E95D0500573FAA /* SearchSuggestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSuggestView.swift; sourceTree = "<group>"; };
+		6C6C403229E9D4D000D137ED /* FeaturedBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedBanner.swift; sourceTree = "<group>"; };
 		6CF2615129E83A16003D1CBC /* Amazon Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amazon Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF2615429E83A16003D1CBC /* Amazon_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amazon_CloneApp.swift; sourceTree = "<group>"; };
 		6CF2615629E83A16003D1CBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				6C4FD91F29E9A50500C48C7C /* TabView.swift */,
 				6C4FD92129E9AF8600C48C7C /* SlidingImagesView.swift */,
 				6C4FD92329E9B44000C48C7C /* DiscoverImagesView.swift */,
+				6C6C403229E9D4D000D137ED /* FeaturedBanner.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				6CF2615529E83A16003D1CBC /* Amazon_CloneApp.swift in Sources */,
 				6C67651629E95D0500573FAA /* SearchSuggestView.swift in Sources */,
 				6CF2616E29E83BE4003D1CBC /* MainView.swift in Sources */,
+				6C6C403329E9D4D000D137ED /* FeaturedBanner.swift in Sources */,
 				6C17AE9829E96C74003EF149 /* LocationArea.swift in Sources */,
 				6CF2616129E83A17003D1CBC /* Amazon_Clone.xcdatamodeld in Sources */,
 			);
