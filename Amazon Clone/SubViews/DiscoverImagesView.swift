@@ -36,5 +36,6 @@ struct DiscoverImagesView: View {
             }//: ScrollView
             Spacer()
         }//: Big VSTack
+        .background(.white)
     }
 }

@@ -23,8 +23,12 @@ struct FeaturedBanner: View {
 
             }
         }//: ZStack
+        
         .frame(width: UIScreen.main.bounds.width)
+        
         .background(Color("FeaturedBannerColor"))
+        
+        .padding(.vertical, 10)
         
     }
 }
